@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /*Cores*/
+    --cor-01: #382307;
+    --cor-02: #806237;
+    --cor-03: #D3A96E; 
+    --cor-05: #000000;
+    --cor-06: #909090;
+    --cor-07: #FFFFFF;
+    /*Fontes*/
+    --fonte-01: "Afacad Flux", sans-serif;
+    --fonte-02: 'Arial';
+}
+/*Corpo da Página*/
+#corpo{
+    background-color: var(--cor-07);
+}
+/*Cabeçalho*/
+.cabecalho{
+    font-family: var(--fonte-01);
+    text-align: center;
+}
+.cabecalho-titulo{
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--cor-02);
+}
+.cabecalho-subtitulo{
+    font-size: 1.3rem;
+    background-color: var(--cor-01);
+    color: var(--cor-07);
+    padding: 5px;
+}
+/*Links (apenas o Container)*/
+.container-link{
+    font-size: 1rem;
+    font-family: var(--fonte-01);
+    text-align: center;
+    background-color: var(--cor-03);
+    border: solid 2px var(--cor-02);
+    border-radius: 10px;
+    margin: 0 20%;
+}
+/*Esses dois atributos precisam permanecer iguais para garantir que o link se torne clicável assim que o mouse tocar no container (só abrange a altura, não cobre as laterais).*/
+.container-link,
+.link-principal{
+    padding: 10px 0;
+}
+/*Texto*/
+.container-texto{
+    margin: 0 5%;
+}
+.texto-titulo{
+    font-family: var(--fonte-01);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cor-02);
+    margin: 10px;
+}
+.container-paragrafo{
+    text-align: justify;
+}
+.container-paragrafo>p{
+    font-family: var(--fonte-01);
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+.destaque-paragrafo{
+    font-family: var(--fonte-01);
+    color: var(--cor-02);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.texto-destaque-menor{
+    text-decoration: underline;
+}
+/*Botão Voltar*/
+.container-botao-voltar{
+    text-align: center;
+}
+/*Rodapé*/
+.rodape {
+    background-color: var(--cor-06);
+    color: var(--cor-07);
+    font-family: var(--fonte-02);
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10vh 0;
+}
+/*Imagem*/
+.container-imagem{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%;             /* Ocupa a largura total */
+}
+.imagem{
+    height: 200px;
+    width: 200px;
+}
+/*Links*/
+.link-principal{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--cor-01);
+    text-transform: uppercase;
+}
+.botao-voltar{ 
+    font-family: var(--fonte-01);
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--cor-07);
+    background-color: var(--cor-01);
+    padding: 10px;
+    border: solid 2px var(--cor-01);
+    border-radius: 50%;
+}
+.rodape-desenvolvedor-link,
+.rodape-hospedagem-link {
+    color: var(--cor-07);
+    text-decoration: none;
+}
+.link-secundario{
+    color: var(--cor-05);
+    text-decoration: none;
+}
+/*Hovers*/
+.container-link:hover{
+    background-color: var(--cor-02)
+}
+.container-link:hover .link-principal{
+    color: var(--cor-07);
+}
+.botao-voltar:hover{
+    background-color: var(--cor-02);
+    color: var(--cor-01);
+}
+.rodape-desenvolvedor-link:hover,
+.rodape-hospedagem-link:hover{
+    color: var(--cor-07);
+    text-decoration: underline;
+}
+
+/*Magin Top*/
+.cabecalho,
+.conteudo-principal,
+.container-texto,
+.container-link,
+.container-lista,
+.container-botao-voltar,
+.rodape{
+    margin-top: 10vh;
+}
+/*Responsividade*/
+
+@media (min-width: 768px) {
+    .lista-item {
+        margin: 1% 30%;
+    }
+    .container-arcano{
+        margin: 0 25%;
+    }
+}
