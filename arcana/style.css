@@ -40,7 +40,7 @@
     font-size: 1rem;
     font-family: var(--fonte-01);
     text-align: center;
-    background-color: var(--cor-03);
+    background-color: rgb(128, 98, 55, 0.25);
     border: solid 2px var(--cor-02);
     border-radius: 10px;
     margin: 0 20%;
@@ -52,12 +52,12 @@
 }
 /*Texto*/
 .container-texto{
-    margin: 0 5%;
+    margin: 10vh 10%;
 }
 .texto-titulo{
     font-family: var(--fonte-01);
     font-size: 1.5rem;
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     color: var(--cor-02);
@@ -103,12 +103,14 @@
 .imagem{
     height: 200px;
     width: 200px;
+    border-radius: 50%;
 }
 /*Links*/
 .link-principal{
     font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: none;
-    color: var(--cor-01);
+    color: var(--cor-02);
     text-transform: uppercase;
 }
 .botao-voltar{ 
@@ -138,8 +140,17 @@
 .container-link:hover .link-principal{
     color: var(--cor-07);
 }
+.link-secundario:hover{
+    text-decoration: underline;
+}
+
+.depoimento-imagem{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .botao-voltar:hover{
-    background-color: var(--cor-02);
+background-color: rgb(128, 98, 55, 0.25);
     color: var(--cor-01);
 }
 .rodape-desenvolvedor-link:hover,
@@ -151,7 +162,6 @@
 /*Magin Top*/
 .cabecalho,
 .conteudo-principal,
-.container-texto,
 .container-link,
 .container-lista,
 .container-botao-voltar,
