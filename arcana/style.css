@@ -17,6 +17,7 @@
 }
 /*Corpo da Página*/
 #corpo{
+    font-size: 1rem;
     background-color: var(--cor-07);
 }
 /*Cabeçalho*/
@@ -35,48 +36,50 @@
     color: var(--cor-07);
     padding: 5px;
 }
+.container-logo{
+    text-align: center;
+}
+.logo{
+    background-image: url(img/arcana_logo.png);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.conteudo-principal{
+    font-family: var(--fonte-01);
+}
+/*Texto*/
+.container-texto{
+    text-align: center;
+}
+.texto-titulo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-02);
+    line-height: 2.5rem;
+}
+.container-paragrafo{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 20px 0;
+}
 /*Links (apenas o Container)*/
 .container-link{
-    font-size: 1rem;
-    font-family: var(--fonte-01);
     text-align: center;
     background-color: rgb(128, 98, 55, 0.25);
     border: solid 2px var(--cor-02);
     border-radius: 10px;
-    margin: 0 20%;
 }
-/*Esses dois atributos precisam permanecer iguais para garantir que o link se torne clicável assim que o mouse tocar no container (só abrange a altura, não cobre as laterais).*/
 .container-link,
 .link-principal{
-    padding: 10px 0;
+    padding: 10px 0; /*top e bottom precisam estar iguais aos outros containers*/
 }
-/*Texto*/
-.container-texto{
-    margin: 10vh 10%;
-}
-.texto-titulo{
-    font-family: var(--fonte-01);
-    font-size: 1.5rem;
+.destaque-paragrafo{ /*NÃO ESTÁ NA PÁAGINA INICIAL: CONFERIR COM AS OUTROAS PÁGINAS*/
+    color: var(--cor-02);
     font-weight: bold;
-    text-align: center;
     text-transform: uppercase;
-    color: var(--cor-02);
-    margin: 10px;
-}
-.container-paragrafo{
-    text-align: justify;
-}
-.container-paragrafo>p{
-    font-family: var(--fonte-01);
-    font-size: 1rem;
-    text-align: center;
-    margin: 1rem;
-}
-.destaque-paragrafo{
-    font-family: var(--fonte-01);
-    color: var(--cor-02);
-    font-weight: 900;
-    text-transform: uppercase;
+    padding-top: 20px;
 }
 .texto-destaque-menor{
     text-decoration: underline;
@@ -95,43 +98,46 @@
     padding: 10vh 0;
 }
 /*Imagem*/
-.container-imagem{
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    width: 100%;             /* Ocupa a largura total */
+.depoimento{
+    text-align: center;
 }
 .imagem{
+    background-image: url(img/arcana_logo.png);
     height: 200px;
     width: 200px;
     border-radius: 50%;
 }
+.linha{
+  color: #fff;
+  background-color: #fff;
+  border: none;
+  border-top: .25rem dotted var(--cor-01); /* Linha com pontos */
+}
 /*Links*/
 .link-principal{
-    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--cor-02);
     text-transform: uppercase;
 }
 .botao-voltar{ 
-    font-family: var(--fonte-01);
     font-weight: bold;
     font-size: 1rem;
     text-decoration: none;
     color: var(--cor-07);
     background-color: var(--cor-01);
-    padding: 10px;
     border: solid 2px var(--cor-01);
     border-radius: 50%;
+    padding: 10px;
 }
 .rodape-desenvolvedor-link,
 .rodape-hospedagem-link {
-    color: var(--cor-07);
     text-decoration: none;
+    color: var(--cor-07);
 }
 .link-secundario{
-    color: var(--cor-05);
     text-decoration: none;
+    color: var(--cor-05);
 }
 /*Hovers*/
 .container-link:hover{
@@ -143,12 +149,6 @@
 .link-secundario:hover{
     text-decoration: underline;
 }
-
-.depoimento-imagem{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .botao-voltar:hover{
 background-color: rgb(128, 98, 55, 0.25);
     color: var(--cor-01);
@@ -158,23 +158,35 @@ background-color: rgb(128, 98, 55, 0.25);
     color: var(--cor-07);
     text-decoration: underline;
 }
-
-/*Magin Top*/
+/*Magin Top&Bottom*/
 .cabecalho,
+.container-logo,
 .conteudo-principal,
-.container-link,
 .container-lista,
-.container-botao-voltar,
-.rodape{
-    margin-top: 10vh;
+.depoimento,
+.container-botao-voltar{
+    margin: 10vh 0;
 }
-/*Responsividade*/
-
+.container-texto,
+.container-link,
+.linha{
+    margin: 10vh 10%;
+}
 @media (min-width: 768px) {
+    .container-texto{
+        margin: 10vh 30%;
+    }
+    .container-link{
+        margin: 10vh 40%;
+    }
+}
+/*Responsividade
+
     .lista-item {
         margin: 1% 30%;
     }
     .container-arcano{
         margin: 0 25%;
     }
-}
+*/
+
