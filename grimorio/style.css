@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('pag/tarot/simbolos/simbolos.css');
 * {
     margin: 0;
     padding: 0;
@@ -17,13 +18,13 @@
 }
 /*Corpo da Página*/
 #corpo{
-    font-size: 1rem;
     background-color: var(--cor-07);
 }
 /*Cabeçalho*/
 .cabecalho{
     font-family: var(--fonte-01);
     text-align: center;
+    margin-top: 10vh;
 }
 .cabecalho-titulo{
     font-weight: bold;
@@ -36,50 +37,52 @@
     color: var(--cor-07);
     padding: 5px;
 }
-.container-logo{
-    text-align: center;
-}
-.logo{
-    background-image: url(img/arcana_logo.png);
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
+/*Main*/
 .conteudo-principal{
-    font-family: var(--fonte-01);
-}
-/*Texto*/
-.container-texto{
     text-align: center;
+    margin-top: 10vh;
 }
-.texto-titulo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--cor-02);
-    line-height: 2.5rem;
-}
-.container-paragrafo{
+/*Listas de Páginas*/
+.container-lista{
     font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 20px 0;
+    margin-top: 10vh;
 }
-/*Links (apenas o Container)*/
-.container-link{
+.lista-item{
+    font-family: var(--fonte-01);
     text-align: center;
-    background-color: rgb(128, 98, 55, 0.25);
+    background-color: var(--cor-03);
     border: solid 2px var(--cor-02);
     border-radius: 10px;
+    padding: 10px;
+    margin: 1% 20%;
 }
-.container-link,
-.link-principal{
-    padding: 10px 0; /*top e bottom precisam estar iguais aos outros containers*/
+/*Arcanos*/
+.container-arcano{
+    margin: 5%;
 }
-.destaque-paragrafo{ /*NÃO ESTÁ NA PÁAGINA INICIAL: CONFERIR COM AS OUTROAS PÁGINAS*/
-    color: var(--cor-02);
-    font-weight: bold;
+.arcano-titulo{
+    font-family: var(--fonte-01);
+    font-size: 1.5rem;
+    font-weight: bolder;
     text-transform: uppercase;
-    padding-top: 20px;
+    color: var(--cor-02);
+    margin: 10px;
+}
+.arcano-texto{
+    text-indent: 30px;
+    text-align: justify;
+}
+.arcano-texto>p{
+    font-family: var(--fonte-01);
+    font-size: 1rem;
+    text-indent: 30px;
+    margin: 1rem;
+}
+.texto-destaque{
+    font-family: var(--fonte-01);
+    color: var(--cor-02);
+    font-weight: 900;
+    text-transform: uppercase;
 }
 .texto-destaque-menor{
     text-decoration: underline;
@@ -87,6 +90,10 @@
 /*Botão Voltar*/
 .container-botao-voltar{
     text-align: center;
+    margin: 10vh 0;
+}
+#home{
+    margin: 10vh 0;
 }
 /*Rodapé*/
 .rodape {
@@ -97,60 +104,51 @@
     font-size: 0.8rem;
     padding: 10vh 0;
 }
-/*Imagem*/
-.depoimento{
-    text-align: center;
+/*Imagens*/
+.container-imagem{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%;             /* Ocupa a largura total */
+    margin-bottom: 30px;
 }
 .imagem{
-    background-image: url(img/arcana_logo.png);
-    height: 200px;
+    height: 340px;
     width: 200px;
-    border-radius: 50%;
-}
-.linha{
-  color: #fff;
-  background-color: #fff;
-  border: none;
-  border-top: .25rem dotted var(--cor-01); /* Linha com pontos */
+    border: solid 2px var(--cor-02);
+    border-radius: 20px;
 }
 /*Links*/
-.link-principal{
-    font-weight: bold;
+.item-link{
+    font-size: 1.2rem;
     text-decoration: none;
-    color: var(--cor-02);
+    color: var(--cor-01);
     text-transform: uppercase;
 }
 .botao-voltar{ 
+    font-family: var(--fonte-01);
     font-weight: bold;
     font-size: 1rem;
     text-decoration: none;
     color: var(--cor-07);
     background-color: var(--cor-01);
+    padding: 10px;
     border: solid 2px var(--cor-01);
     border-radius: 50%;
-    padding: 10px;
 }
 .rodape-desenvolvedor-link,
 .rodape-hospedagem-link {
-    text-decoration: none;
     color: var(--cor-07);
-}
-.link-secundario{
     text-decoration: none;
-    color: var(--cor-05);
 }
 /*Hovers*/
-.container-link:hover{
+.lista-item:hover{
     background-color: var(--cor-02)
 }
-.container-link:hover .link-principal{
+.lista-item:hover .item-link{
     color: var(--cor-07);
 }
-.link-secundario:hover{
-    text-decoration: underline;
-}
 .botao-voltar:hover{
-    background-color: rgb(128, 98, 55, 0.25);
+    background-color: var(--cor-02);
     color: var(--cor-01);
 }
 .rodape-desenvolvedor-link:hover,
@@ -158,35 +156,14 @@
     color: var(--cor-07);
     text-decoration: underline;
 }
-/*Magin Top&Bottom*/
-.cabecalho,
-.container-logo,
-.conteudo-principal,
-.container-lista,
-.depoimento,
-.container-botao-voltar{
-    margin: 10vh 0;
-}
-.container-texto,
-.container-link,
-.linha{
-    margin: 10vh 10%;
-}
-@media (min-width: 768px) {
-    .container-texto{
-        margin: 10vh 30%;
-    }
-    .container-link{
-        margin: 10vh 40%;
-    }
-}
-/*Responsividade
 
+/*Responsividade*/
+
+@media (min-width: 768px) {
     .lista-item {
         margin: 1% 30%;
     }
     .container-arcano{
         margin: 0 25%;
     }
-*/
-
+}
