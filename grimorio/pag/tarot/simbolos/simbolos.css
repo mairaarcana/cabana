@@ -14,4 +14,5 @@
 /* Estilo para remover as bolinhas da lista (opcional) */
 #simbolos {
     list-style: none;
+    margin: 0;
 }

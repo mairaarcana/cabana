@@ -11,8 +11,14 @@ COMENTÁRIO EM JAVASCRIPT
 Selecionar Texto e comentar
 Ctrl + K + C
 
+Identar Código
+Shift + Alt + F
+
 Localizar e Substituir na Pasta
 Ctrl + Shift + F
 
-Identar Código
-Shift + Alt + F
+Localizar e Substituir Com Regex
+Ctrl + Shift + F
+Ativar botão de Regex (.*)
+<h1>(.*?)</div>
+<h1>$1</h1>
