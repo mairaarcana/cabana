@@ -1,0 +1,18 @@
+COMENTÁRIO EM HTML
+<!-- comentario em várias  linhas-->
+
+COMENTÁRIO EM CSS
+/* comentario em várias linhas*/
+
+COMENTÁRIO EM JAVASCRIPT
+/* comentario várias linhas */
+// cometário em uma linha
+
+Selecionar Texto e comentar
+Ctrl + K + C
+
+Localizar e Substituir na Pasta
+Ctrl + Shift + F
+
+Identar Código
+Shift + Alt + F

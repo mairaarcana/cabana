@@ -6,9 +6,9 @@
 }
 :root {
     /*Cores*/
-    --cor-01: #382307;
-    --cor-02: #806237;
-    --cor-03: #D3A96E; 
+    --cor-01: #382307; /**/
+    --cor-02: #b07e09; /*#806237;*/
+    --cor-03: #E2CFA3; 
     --cor-05: #000000;
     --cor-06: #909090;
     --cor-07: #FFFFFF;
@@ -37,10 +37,19 @@
     color: var(--cor-07);
     padding: 5px;
 }
+.cabecalho-imagem{
+    text-align: center;            /* Ocupa a largura total */
+    margin-top: 10vh;
+}
+.imagem-home{
+    background-image: url(img/home.png);
+    height: 340px;
+    width: 200px;
+    border-radius: 20px;
+}
 /*Main*/
 .conteudo-principal{
-    text-align: center;
-    margin-top: 10vh;
+    margin: 10vh;
 }
 /*Listas de Páginas*/
 .container-lista{
@@ -54,29 +63,39 @@
     border: solid 2px var(--cor-02);
     border-radius: 10px;
     padding: 10px;
-    margin: 1% 20%;
+    margin: 3% 10%;
 }
 /*Arcanos*/
-.container-arcano{
-    margin: 5%;
+.container-arcano,
+ul{
+    margin: 0 5%;
 }
 .arcano-titulo{
+    text-align: center;
     font-family: var(--fonte-01);
     font-size: 1.5rem;
     font-weight: bolder;
     text-transform: uppercase;
     color: var(--cor-02);
-    margin: 10px;
 }
-.arcano-texto{
-    text-indent: 30px;
-    text-align: justify;
+.arcano-subtitulo{
+    text-align: center;
+    text-indent: 0;
+}
+.arcano-subtitulo,
+.arcano-texto>p{
+    font-size: 1rem;
+    margin: 1rem 0;
 }
 .arcano-texto>p{
+    text-indent: 30px;
+}
+.arcano-texto>p,
+li{
+    text-align: justify;
     font-family: var(--fonte-01);
     font-size: 1rem;
-    text-indent: 30px;
-    margin: 1rem;
+    line-height: 1.7rem;
 }
 .texto-destaque{
     font-family: var(--fonte-01);
@@ -85,7 +104,7 @@
     text-transform: uppercase;
 }
 .texto-destaque-menor{
-    text-decoration: underline;
+    font-weight: bold;
 }
 /*Botão Voltar*/
 .container-botao-voltar{
@@ -106,22 +125,27 @@
 }
 /*Imagens*/
 .container-imagem{
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    width: 100%;             /* Ocupa a largura total */
-    margin-bottom: 30px;
+    text-align: center;            /* Ocupa a largura total */
+    margin: 10vh 0;
 }
 .imagem{
     height: 340px;
     width: 200px;
-    border: solid 2px var(--cor-02);
     border-radius: 20px;
+}
+/*Lista*/
+li{
+    list-style-position: outside; /* Garante que o marcador fique fora */
+}
+li::marker{
+    color: var(--cor-02);
 }
 /*Links*/
 .item-link{
     font-size: 1.2rem;
+    font-weight: 500;
     text-decoration: none;
-    color: var(--cor-01);
+    color: var(--cor-02);
     text-transform: uppercase;
 }
 .botao-voltar{ 
