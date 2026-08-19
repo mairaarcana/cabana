@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 @import url('pag/tarot/simbolos/simbolos.css');
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('../style/basico.css');
+@import url('../style/cabecalho.css');
+@import url('../style/rodape.css');
+@import url('../style/responsivo.css');
 :root {
     /*Cores*/
     --cor-01: #382307;
@@ -16,158 +16,14 @@
     --fonte-01: "Afacad Flux", sans-serif;
     --fonte-02: 'Arial';
 }
-/*Corpo da Página*/
-#corpo{
-    font-size: 1rem;
-    background-color: var(--cor-07);
-}
-/*Cabeçalho*/
-.cabecalho{
-    font-family: var(--fonte-01);
-    text-align: center;
-}
-.cabecalho-titulo{
-    font-weight: bold;
-    font-size: 3rem;
-    color: var(--cor-02);
-}
-.cabecalho-subtitulo{
-    font-size: 1.3rem;
-    background-color: var(--cor-01);
-    color: var(--cor-07);
-    padding: 5px;
-}
-/*Main*/
-.conteudo-principal{
-    font-family: var(--fonte-01);
-    text-align: center; /*CONFERIR*/
-}
-/*Listas de Páginas*/
-.container-lista{
-    font-size: 1rem;
-    margin-top: 10vh;
-}
-.lista-item{
-    text-align: center;
-    background-color: var(--cor-03);
-    border: solid 2px var(--cor-02);
-    border-radius: 10px;
-    padding: 10px 0;
-    margin: 5vh 10%;
-}
-/*Arcanos*/
-.container-arcano{
-    margin: 5%;
-}
-.arcano-titulo{
-    font-family: var(--fonte-01);
-    font-size: 1.5rem;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: var(--cor-02);
-    margin: 10px;
-}
-.arcano-texto{
-    text-indent: 30px;
+/*Texto*/
+.container-paragrafo>p{
     text-align: justify;
-}
-.arcano-texto>p{
-    font-family: var(--fonte-01);
-    font-size: 1rem;
     text-indent: 30px;
-    margin: 1rem;
-}
-.texto-destaque{
-    font-family: var(--fonte-01);
-    color: var(--cor-02);
-    font-weight: 900;
-    text-transform: uppercase;
-}
-.texto-destaque-menor{
-    text-decoration: underline;
-}
-/*Botão Voltar*/
-.container-botao-voltar{
-    text-align: center;
-    margin: 10vh 0;
-}
-
-/*Rodapé*/
-.rodape {
-    background-color: var(--cor-06);
-    color: var(--cor-07);
-    font-family: var(--fonte-02);
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 10vh 0;
 }
 /*Imagens*/
-.container-imagem{
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    width: 100%;             /* Ocupa a largura total */
-    margin-bottom: 30px;
-}
 .imagem{
     height: 340px;
     width: 200px;
     border-radius: 15px;
-}
-/*Links*/
-.item-link{
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: var(--cor-01);
-    text-transform: uppercase;
-}
-.botao-voltar{ 
-    font-family: var(--fonte-01);
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--cor-07);
-    background-color: var(--cor-01);
-    padding: 10px;
-    border: solid 2px var(--cor-01);
-    border-radius: 50%;
-}
-.rodape-desenvolvedor-link,
-.rodape-hospedagem-link {
-    color: var(--cor-07);
-    text-decoration: none;
-}
-/*Hovers*/
-.lista-item:hover{
-    background-color: var(--cor-02)
-}
-.lista-item:hover .item-link{
-    color: var(--cor-07);
-}
-.botao-voltar:hover{
-    background-color: var(--cor-02);
-    color: var(--cor-01);
-}
-.rodape-desenvolvedor-link:hover,
-.rodape-hospedagem-link:hover{
-    color: var(--cor-07);
-    text-decoration: underline;
-}
-
-.cabecalho,
-.container-logo, /*trocar nome*/
-.conteudo-principal,
-.container-lista,
-.container-botao-voltar{
-    margin: 10vh 0;
-}
-
-/*Responsividade*/
-
-@media (min-width: 768px) {
-    .lista-item {
-        margin: 1% 30%;
-    }
-    .container-arcano{
-        margin: 0 25%;
-    }
 }

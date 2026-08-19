@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Corpo da Página*/
+#corpo{
+    font-size: 1rem;
+    background-color: var(--cor-07);
+}
+/*Main*/
+.conteudo-principal{
+    font-family: var(--fonte-01);
+}
+/*Menu*/
+.container-menu{
+    font-size: 1rem;
+    margin-top: 10vh;
+}
+.menu-item{
+    text-align: center;
+    background-color: var(--cor-03);
+    border: solid 2px var(--cor-02);
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 5vh 10%;
+}
+.menu-link{ /*Mudar para .menu-link*/
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor-02);
+    text-transform: uppercase;
+}.menu-item,
+.menu-link{
+    padding: 10px 0; /*top e bottom precisam estar iguais aos outros containers*/
+}
+/*Hover [Menu]*/
+.menu-item:hover{
+    background-color: var(--cor-02)
+}
+.menu-item:hover .menu-link{
+    color: var(--cor-07);
+}
+/*Texto*/
+.container-texto{
+    margin: 0 5%;
+}
+.container-paragrafo>p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.texto-titulo{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-02);
+    line-height: 2.5rem;
+}
+.texto-subtitulo{
+    text-align: center;
+    padding: 20px 0;
+}
+.texto-subtitulo,
+.texto-destaque{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-02);
+}
+.container-paragrafo{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 20px 0;
+}
+.container-paragrafo>p{
+    font-size: 1rem;
+    margin: 1rem;
+}
+/*Imagens*/
+.container-imagem{
+    text-align: center;/* Ocupa a largura total */
+}
+/*Botão Voltar*/
+.container-botao-voltar{
+    text-align: center;
+}
+.botao-voltar{ 
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--cor-07);
+    background-color: var(--cor-01);
+    border: solid 2px var(--cor-01);
+    border-radius: 50%;
+    padding: 10px;
+}
+.botao-voltar:hover{
+    background-color: var(--cor-03);
+    color: var(--cor-01);
+}
+/*Espaçamento*/
+.cabecalho,
+.container-logo,
+.conteudo-principal,
+.container-lista,
+.container-botao-voltar{
+    margin: 10vh 0;
+}
+.container-texto,
+.container-menu{
+    margin: 10vh 10%;
+}

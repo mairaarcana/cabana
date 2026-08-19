@@ -1,0 +1,24 @@
+/*Cabeçalho*/
+.cabecalho{
+    font-family: var(--fonte-01);
+    text-align: center;
+}
+.cabecalho-titulo{
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--cor-02);
+}
+.cabecalho-subtitulo{
+    font-size: 1.3rem;
+    background-color: var(--cor-01);
+    color: var(--cor-07);
+    padding: 10px;
+}
+.container-logo{
+    text-align: center;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 @import url('pag/tarot/simbolos/simbolos.css');
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('../style/basico.css');
+@import url('../style/cabecalho.css');
+@import url('../style/rodape.css');
+@import url('../style/responsivo.css');
 :root {
     /*Cores*/
     --cor-01: #382307; /**/
@@ -16,107 +16,24 @@
     --fonte-01: "Afacad Flux", sans-serif;
     --fonte-02: 'Arial';
 }
-/*Corpo da Página*/
-#corpo{
-    background-color: var(--cor-07);
-}
 /*Cabeçalho*/
-.cabecalho{
-    font-family: var(--fonte-01);
-    text-align: center;
-}
-.cabecalho-titulo{
-    font-weight: bold;
-    font-size: 3rem;
-    color: var(--cor-02);
-}
-.cabecalho-subtitulo{
-    font-size: 1.3rem;
-    background-color: var(--cor-01);
-    color: var(--cor-07);
-    padding: 10px;
-}
-.cabecalho-imagem{
-    text-align: center;
-}
-.imagem-home{
+.logo{
     background-image: url(img/home.png);
-    height: 340px;
-    width: 200px;
-    border-radius: 20px;
 }
-/*Menu*/
-.container-menu{
-    font-size: 1rem;
-    margin-top: 10vh;
-}
-.menu-item{
-    font-family: var(--fonte-01);
-    text-align: center;
-    background-color: var(--cor-03);
-    border: solid 2px var(--cor-02);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5% 10%;
-}
-/*Arcanos*/
-.container-arcano{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.arcano-titulo{
-    font-size: 1.5rem;
-    font-weight: bolder;
-    font-family: var(--fonte-01);
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--cor-02);
-    margin-bottom: 1rem;
-}
-.arcano-subtitulo{
-    text-align: center;
-    margin: 1.5rem 0;
-}
-.arcano-subtitulo,
-.texto-destaque{
-    font-size: 1rem;
-    font-weight: 900;
-    font-family: var(--fonte-01);
-    text-transform: uppercase;
-    color: var(--cor-02);
-}
-.arcano-texto>p{
+/*Texto*/
+.container-paragrafo>p{
     text-indent: 30px;
 }
-.arcano-texto>p,
+.container-paragrafo>p,
 .lista>li,
 .lista-numerada>li{
-    font-family: var(--fonte-01);
-    font-size: 1rem;
-    line-height: 1.5rem;
     text-align: justify;
-    margin-bottom: 1rem;
-}
-/*Botão Voltar*/
-.container-botao-voltar{
-    text-align: center;
-}
-/*Rodapé*/
-.rodape {
-    background-color: var(--cor-06);
-    color: var(--cor-07);
-    font-family: var(--fonte-02);
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 10vh 0;
 }
 /*Imagens*/
-.container-imagem{
-    text-align: center;/* Ocupa a largura total */
-}
 .imagem{
     height: 340px;
     width: 200px;
+    border: 2px solid var(--cor-02);
     border-radius: 20px;
 }
 /*Lista*/
@@ -135,65 +52,4 @@
 .lista>li::marker,
 .lista-numerada>li::marker{
     color: var(--cor-02);
-}
-/*Links*/
-.item-link{
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--cor-02);
-    text-transform: uppercase;
-}
-.botao-voltar{ 
-    font-family: var(--fonte-01);
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 5rem;
-    text-decoration: none;
-    color: var(--cor-07);
-    background-color: var(--cor-01);
-    border: solid 2px var(--cor-01);
-    border-radius: 50%;
-    padding: 10px;
-    margin: 10px 0;
-}
-.rodape-desenvolvedor-link,
-.rodape-hospedagem-link {
-    color: var(--cor-07);
-    text-decoration: none;
-}
-/*Hovers*/
-.menu-item:hover{
-    background-color: var(--cor-02)
-}
-.menu-item:hover .item-link{
-    color: var(--cor-07);
-}
-.botao-voltar:hover{
-    background-color: var(--cor-02);
-    color: var(--cor-01);
-}
-.rodape-desenvolvedor-link:hover,
-.rodape-hospedagem-link:hover{
-    color: var(--cor-07);
-    text-decoration: underline;
-}
-/*Espaçamento Principal*/
-.cabecalho,
-.cabecalho-imagem,
-.conteudo-principal,
-.container-imagem,
-.container-arcano,
-.container-botao-voltar,
-.rodape{
-    margin-top: 10vh;
-}
-/*Responsividade*/
-@media (min-width: 768px) {
-    .menu-item {
-        margin: 3% 30%;
-    }
-    .container-arcano{
-        margin: 0 25%;
-    }
 }

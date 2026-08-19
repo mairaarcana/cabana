@@ -1,0 +1,21 @@
+/*Rodapé*/
+.rodape {
+    background-color: var(--cor-06);
+    color: var(--cor-07);
+    font-family: var(--fonte-02);
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10vh 0;
+}
+/*Rodapé Links*/
+.rodape-desenvolvedor-link,
+.rodape-hospedagem-link{
+    text-decoration: none;
+    color: var(--cor-07);
+}
+/*Rodapé Hover*/
+.rodape-desenvolvedor-link:hover,
+.rodape-hospedagem-link:hover{
+    color: var(--cor-07);
+    text-decoration: underline;
+}

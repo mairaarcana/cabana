@@ -1,0 +1,9 @@
+/*Responsividade*/
+@media (min-width: 768px) {
+    .menu-item {
+        margin: 10vh 40% !important;
+    }
+    .container-texto {
+        margin: 10vh 30% !important;
+    }
+}
