@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('pag/tarot/simbolos/simbolos.css');
+@import url('../style/basico.css');
+@import url('../style/cabecalho.css');
+@import url('../style/rodape.css');
+@import url('../style/responsivo.css');
+:root {
+    /*Cores*/
+    --cor-01: #382307;
+    --cor-02: #806237;
+    --cor-03: #C2BBB2; 
+    --cor-05: #000000;
+    --cor-06: #9E9E9E;
+    --cor-07: #FFFFFF;
+    /*Fontes*/
+    --fonte-01: "Afacad Flux", sans-serif;
+    --fonte-02: 'Arial';
+}
+#logo-home{
+        background-image: url('img/home.png');
+        }
+#ancestral{
+    background-image: url('img/ancestral.png');
+}
+#logo-inverno{
+    background-image: url('img/inverno.png');
+}
+/*Menu*/
+.menu-item{
+    background-color: var(--cor-03);
+    border: solid 2px var(--cor-02);
+}
+.menu-link{
+    color: var(--cor-02);
+}
+/*Menu Hover*/
+.menu-item:hover{
+    background-color: var(--cor-02)
+}
+.menu-item:hover .menu-link{
+    color: var(--cor-07);
+}
+/*Texto*/
+.container-paragrafo>p{
+    text-align: justify;
+    text-indent: 30px;
+}
+/*Imagens*/
+.imagem{
+    height: 340px;
+    width: 200px;
+    border-radius: 15px;
+}
+/*Rodapé*/
+.rodape{
+    color: var(--cor-07);
+    background-color: var(--cor-06);
+}
+/*Rodapé Links*/
+.rodape-desenvolvedor-link,
+.rodape-hospedagem-link{
+    text-decoration: none;
+    color: var(--cor-07);
+}
+/*Rodapé Hover*/
+.rodape-desenvolvedor-link:hover,
+.rodape-hospedagem-link:hover{
+    color: var(--cor-05);
+    text-decoration: underline;
+}

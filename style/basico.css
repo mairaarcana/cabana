@@ -5,7 +5,6 @@
 /*Corpo da Página*/
 #corpo{
     font-size: 1rem;
-    background-color: var(--cor-07);
 }
 /*Main*/
 .conteudo-principal{
@@ -18,8 +17,6 @@
 }
 .menu-item{
     text-align: center;
-    background-color: var(--cor-03);
-    border: solid 2px var(--cor-02);
     border-radius: 10px;
     padding: 10px 0;
     margin: 5vh 10%;
@@ -27,18 +24,10 @@
 .menu-link{ /*Mudar para .menu-link*/
     font-weight: bold;
     text-decoration: none;
-    color: var(--cor-02);
     text-transform: uppercase;
 }.menu-item,
 .menu-link{
     padding: 10px 0; /*top e bottom precisam estar iguais aos outros containers*/
-}
-/*Hover [Menu]*/
-.menu-item:hover{
-    background-color: var(--cor-02)
-}
-.menu-item:hover .menu-link{
-    color: var(--cor-07);
 }
 /*Texto*/
 .container-texto{
@@ -52,9 +41,6 @@
 .texto-titulo{
     text-align: center;
     font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--cor-02);
     line-height: 2.5rem;
 }
 .texto-subtitulo{
@@ -64,9 +50,18 @@
 .texto-subtitulo,
 .texto-destaque{
     font-size: 1rem;
+}
+.texto-titulo,
+.texto-subtitulo,
+.texto-destaque,
+.info-título{
     font-weight: bold;
     text-transform: uppercase;
     color: var(--cor-02);
+}
+.container-info,
+.info-texto{
+    margin: 2vh 0;
 }
 .container-paragrafo{
     font-size: 1rem;
@@ -93,7 +88,7 @@
     background-color: var(--cor-01);
     border: solid 2px var(--cor-01);
     border-radius: 50%;
-    padding: 10px;
+    padding: 6px;
 }
 .botao-voltar:hover{
     background-color: var(--cor-03);
@@ -105,9 +100,9 @@
 .conteudo-principal,
 .container-lista,
 .container-botao-voltar{
-    margin: 10vh 0;
+    margin: 5vh 0;
 }
 .container-texto,
 .container-menu{
-    margin: 10vh 10%;
+    margin: 5vh 10%;
 }

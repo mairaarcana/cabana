@@ -20,9 +20,8 @@ Ctrl + Shift + F
 Localizar e Substituir Com Regex
 Ctrl + Shift + F
 Ativar botão de Regex (.*)
-<h1>(.*?)</div>
-<h1>$1</h1>
-
+___(.*?)___
+___$1___
 
 
 Projeto Cabana

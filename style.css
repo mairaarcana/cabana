@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('style/basico.css');
+@import url('style/cabecalho.css');
+@import url('style/rodape.css');
+@import url('style/responsivo.css');
+:root {
+    /*Cores*/
+    --cor-01: #1C1204;
+    --cor-02: #806237;
+    --cor-03: #C2BBB2;
+    --cor-05: #000000;
+    --cor-06: #909090;
+    --cor-07: #FFFFFF;
+    /*Fontes*/
+    --fonte-01: "Afacad Flux", sans-serif;
+    --fonte-02: 'Arial';
+}
+#corpo{
+    background-color: var(--cor-01);
+}
+/*Cabeçalho*/
+#logo-home{
+    background-image: url(home.png);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}/*Menu*/
+.menu-item{
+    background-color: var(--cor-02);
+    border: solid 2px var(--cor-02);
+}
+.menu-link{
+    color: var(--cor-07);
+}
+/*Menu Hover*/
+.menu-item:hover{
+    background-color: var(--cor-07)
+}
+.menu-item:hover .menu-link{
+    color: var(--cor-02);
+}
+/*Texto*/
+.container-texto{
+    text-align: center;
+}
+.container-paragrafo{
+    color: var(--cor-07);
+}
+/*Rodapé*/
+.rodape{
+    color: var(--cor-05);
+    background-color: var(--cor-07);
+}
+/*Rodapé Links*/
+.rodape-desenvolvedor-link,
+.rodape-hospedagem-link{
+    text-decoration: none;
+    color: var(--cor-05);
+}
+/*Rodapé Hover*/
+.rodape-desenvolvedor-link:hover,
+.rodape-hospedagem-link:hover{
+    color: var(--cor-06);
+    text-decoration: underline;
+}
