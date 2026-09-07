@@ -5,18 +5,18 @@
 @import url('style/responsivo.css');
 :root {
     /*Cores*/
-    --cor-01: #1C1204;
+    --cor-01: #382307;
     --cor-02: #806237;
     --cor-03: #C2BBB2;
     --cor-05: #000000;
-    --cor-06: #909090;
-    --cor-07: #FFFFFF;
+    --cor-06: #39393A;
+    --cor-07: #EDEBE8;
     /*Fontes*/
     --fonte-01: "Afacad Flux", sans-serif;
     --fonte-02: 'Arial';
 }
 #corpo{
-    background-color: var(--cor-01);
+    background-color: var(--cor-07);
 }
 /*Cabeçalho*/
 #logo-home{
@@ -44,22 +44,21 @@
     text-align: center;
 }
 .container-paragrafo{
-    color: var(--cor-07);
+    color: var(--cor-05);
 }
 /*Rodapé*/
 .rodape{
-    color: var(--cor-05);
-    background-color: var(--cor-07);
+    color: var(--cor-07);
+    background-color: var(--cor-06);
 }
 /*Rodapé Links*/
 .rodape-desenvolvedor-link,
 .rodape-hospedagem-link{
     text-decoration: none;
-    color: var(--cor-05);
+    color: var(--cor-07);
 }
 /*Rodapé Hover*/
 .rodape-desenvolvedor-link:hover,
 .rodape-hospedagem-link:hover{
-    color: var(--cor-06);
     text-decoration: underline;
 }

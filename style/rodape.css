@@ -1,7 +1,8 @@
 /*Rodapé*/
 .rodape {
     font-family: var(--fonte-02);
-    text-align: center;
     font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: center;
     padding: 10vh 0;
 }
