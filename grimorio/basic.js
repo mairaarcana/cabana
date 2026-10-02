@@ -3,8 +3,8 @@ function exibirTexto(tag, texto) {
     campo.innerHTML = texto;
 }
 // cabeçalho
-exibirTexto('.cabecalho-titulo', 'ARCANA');
-exibirTexto('.cabecalho-subtitulo', 'clareando o destino');
+exibirTexto('.cabecalho-titulo', 'GRIMOIRE');
+exibirTexto('.cabecalho-subtitulo', 'diário de magia');
 // botão de voltar
 exibirTexto('.botao-voltar', '❮❮❮');
 // rodapé
