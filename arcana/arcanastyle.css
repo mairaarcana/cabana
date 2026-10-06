@@ -5,9 +5,9 @@
 @import url('../style/responsivo.css');
 :root {
     /*Cores*/
-    --cor-01: #382307;
+    --cor-01: #4F3716;
     --cor-02: #806237;
-    --cor-03: #C2BBB2;
+    --cor-03: #F0ECE6;
     --cor-05: #000000;
     --cor-06: #39393A;
     --cor-07: #EDEBE8;
@@ -27,18 +27,18 @@
 }
 /*Menu*/
 .menu-item{
-    background-color: var(--cor-03);
+    background-color: var(--cor-02);
     border: solid 2px var(--cor-02);
 }
 .menu-link{
-    color: var(--cor-02);
+    color: var(--cor-07);
 }
 /*Menu Hover*/
 .menu-item:hover{
-    background-color: var(--cor-02)
+    background-color: var(--cor-03)
 }
 .menu-item:hover .menu-link{
-    color: var(--cor-07);
+    color: var(--cor-02);
 }
 /*Texto*/
 .container-texto{
