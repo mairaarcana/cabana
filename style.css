@@ -23,20 +23,6 @@
     height: 200px;
     width: 200px;
     border-radius: 50%;
-}/*Menu*/
-.menu-item{
-    background-color: var(--cor-02);
-    border: solid 2px var(--cor-02);
-}
-.menu-link{
-    color: var(--cor-07);
-}
-/*Menu Hover*/
-.menu-item:hover{
-    background-color: var(--cor-07)
-}
-.menu-item:hover .menu-link{
-    color: var(--cor-02);
 }
 /*Texto*/
 .container-texto{

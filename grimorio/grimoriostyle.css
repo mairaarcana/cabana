@@ -4,36 +4,10 @@
 @import url('../style/cabecalho.css');
 @import url('../style/rodape.css');
 @import url('../style/responsivo.css');
-:root {
-    /*Cores*/
-    --cor-01: #382307;
-    --cor-02: #806237;
-    --cor-03: #C2BBB2; 
-    --cor-05: #000000;
-    --cor-06: #39393A;
-    --cor-07: #EDEBE8;
-    /*Fontes*/
-    --fonte-01: "Afacad Flux", sans-serif;
-    --fonte-02: 'Arial';
-}
+
 /*Cabeçalho*/
 .logo{
     background-image: url(img/home.png);
-}
-/*Menu*/
-.menu-item{
-    background-color: var(--cor-03);
-    border: solid 2px var(--cor-02);
-}
-.menu-link{
-    color: var(--cor-02);
-}
-/*Menu Hover*/
-.menu-item:hover{
-    background-color: var(--cor-02)
-}
-.menu-item:hover .menu-link{
-    color: var(--cor-07);
 }
 /*Texto*/
 .container-paragrafo>p{
@@ -67,21 +41,4 @@
 .lista>li::marker,
 .lista-numerada>li::marker{
     color: var(--cor-02);
-}
-/*Rodapé*/
-.rodape{
-    color: var(--cor-07);
-    background-color: var(--cor-06);
-}
-/*Rodapé Links*/
-.rodape-desenvolvedor-link,
-.rodape-hospedagem-link{
-    text-decoration: none;
-    color: var(--cor-07);
-}
-/*Rodapé Hover*/
-.rodape-desenvolvedor-link:hover,
-.rodape-hospedagem-link:hover{
-    color: var(--cor-05);
-    text-decoration: underline;
 }

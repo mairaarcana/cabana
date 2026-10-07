@@ -3,42 +3,12 @@
 @import url('../style/cabecalho.css');
 @import url('../style/rodape.css');
 @import url('../style/responsivo.css');
-:root {
-    /*Cores*/
-    --cor-01: #4F3716;
-    --cor-02: #806237;
-    --cor-03: #F0ECE6;
-    --cor-05: #000000;
-    --cor-06: #39393A;
-    --cor-07: #EDEBE8;
-    /*Fontes*/
-    --fonte-01: "Afacad Flux", sans-serif;
-    --fonte-02: 'Arial';
-}
-#corpo{
-    background-color: var(--cor-07);
-}
 /*Cabeçalho*/
 .logo{
     background-image: url(img/arcana_logo.png);
     height: 200px;
     width: 200px;
     border-radius: 50%;
-}
-/*Menu*/
-.menu-item{
-    background-color: var(--cor-02);
-    border: solid 2px var(--cor-02);
-}
-.menu-link{
-    color: var(--cor-07);
-}
-/*Menu Hover*/
-.menu-item:hover{
-    background-color: var(--cor-03)
-}
-.menu-item:hover .menu-link{
-    color: var(--cor-02);
 }
 /*Texto*/
 .container-texto{
@@ -74,21 +44,4 @@
 }
 .linha{
     margin: 8vh 10%;
-}
-/*Rodapé*/
-.rodape{
-    color: var(--cor-07);
-    background-color: var(--cor-06);
-}
-/*Rodapé Links*/
-.rodape-desenvolvedor-link,
-.rodape-hospedagem-link{
-    text-decoration: none;
-    color: var(--cor-07);
-}
-/*Rodapé Hover*/
-.rodape-desenvolvedor-link:hover,
-.rodape-hospedagem-link:hover{
-    color: var(--cor-05);
-    text-decoration: underline;
 }
