@@ -27,3 +27,6 @@ ___$1___
 Projeto Cabana
 - trocar class por id: 1. header; 2. main; 3.footer.
 - renomear style.css para pastas correspondentes
+
+selecionar o início de cada linha
+Alt+Shift+I
