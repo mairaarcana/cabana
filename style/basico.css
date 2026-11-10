@@ -57,6 +57,7 @@
   color: var(--cor-02);
 }
 /*Texto*/
+#container-texto-home,
 .container-texto {
   margin: 0 5%;
 }
@@ -66,7 +67,6 @@
   margin-bottom: 1rem;
 }
 .texto-titulo {
-  text-align: center;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }

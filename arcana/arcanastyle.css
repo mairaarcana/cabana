@@ -3,16 +3,42 @@
 @import url('../style/cabecalho.css');
 @import url('../style/rodape.css');
 @import url('../style/responsivo.css');
+
+/*HOME*/
+/*Corpo*/
+#corpo-home{
+    background-color: #382307;
+}
 /*Cabeçalho*/
+#logo-home{
+    background-image: url(img/arcana_logo.png);
+}
+/*Título da Caixa de Texto*/
+#texto-titulo-home {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--cor-07);
+}
+/*Container Parágrafo*/
+#container-paragrafo-home {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 20px 0;
+}
+/*Parágrafo*/
+#container-paragrafo-home > p {
+    font-size: 1rem;
+    color: var(--cor-07);
+}
 .logo{
     background-image: url(img/arcana_logo.png);
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
 }
 /*Texto*/
 .container-texto{
     text-align: center;
+}
+#texto-home{
+    color: var(--cor-01);
 }
 /*Depoimentos*/
 .depoimento-container{
